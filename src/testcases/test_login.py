@@ -1,5 +1,5 @@
-from src.utils.web_driver import BaseTest
-from src.pages.login_page import LoginPage
+from testcases.web_driver import BaseTest
+from pages.login_page import LoginPage
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -15,4 +15,5 @@ class TestLoginWeb(BaseTest):
             EC.visibility_of_element_located((By.XPATH, "//span[text()='Dashboard']"))
         )
         
-        print("\n✅ Login successful!")
+        print("\n Login successful!")
+
